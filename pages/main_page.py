@@ -7,15 +7,13 @@ from base.base_class import Base
 
 
 class MainPage(Base):
-
-
     def __init__(self, driver):
         self.driver = driver
         super().__init__(driver)
 
     # Locators
 
-    select_product_1 = "//button[@id='add-to-cart-sauce-labs-fleece-jacket']"
+    select_product_1 = "//button[@id='add-to-cart-sauce-labs-fleece-jacke']"
     select_product_2 = "//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"
     select_product_3 = "//button[@id='add-to-cart-sauce-labs-bike-light']"
     cart = "//div[@id='shopping_cart_container']"
@@ -94,10 +92,11 @@ class MainPage(Base):
 
 
     def select_menu_about(self):
-        self.get_current_url()
-        self.click_menu()
-        self.click_link_about()
-        self.assert_url("https://saucelabs.com/")
+        with allure.step("select_menu_about"):
+            self.get_current_url()
+            self.click_menu()
+            self.click_link_about()
+            self.assert_url("https://saucelabs.com/")
 
 
 
