@@ -1,0 +1,17 @@
+
+-----
+Test: tests/test_buy_product.py::test_select_product_1 (call)
+Start time: 2022-10-19 12:04:26.377740
+Start name method: authorozation
+
+End time: 2022-10-19 12:04:29.376655
+End name method: authorozation
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product_1 (call)
+Start time: 2022-10-19 12:04:29.377656
+Start name method: select_products_1
+
